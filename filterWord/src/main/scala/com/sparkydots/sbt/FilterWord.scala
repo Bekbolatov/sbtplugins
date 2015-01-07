@@ -1,7 +1,7 @@
-package io.maana.renat.sbt
+package com.sparkydots.sbt
 
-import sbt._
 import sbt.Keys._
+import sbt._
 import sbt.complete.Parsers._
 
 /**
@@ -15,7 +15,7 @@ object FilterWord extends AutoPlugin {
     val sayWord = inputKey[Unit]("Print the word")
   }
 
-  import autoImport._
+  import com.sparkydots.sbt.FilterWord.autoImport._
 
   override def projectSettings: Seq[Setting[_]] = Seq(
     sayWordSetting

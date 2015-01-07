@@ -1,9 +1,9 @@
 sbtPlugin := true
-initialCommands in console := "import io.maana.renat.sbt._"
+initialCommands in console := "import com.sparkydots.sbt._"
 
 scalaVersion := "2.10.4"
 
-organization := "io.maana.renat.sbt"
+organization := "com.sparkydots.sbt"
 name := "wordFilter"
 version := "0.0.2-SNAPSHOT"
 
